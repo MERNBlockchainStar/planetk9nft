@@ -166,7 +166,7 @@ const MintModal = ({ open, onClose, headerTitle, activatingConnector, setActivat
       let tx = null
       const saleIsActive = await nft.saleIsActive()
       let overrides = {
-        value: `${0.0001*1e18*amount}`,
+        value: `${0.02*1e18*amount}`,
       }
      
       if(!saleIsActive)
